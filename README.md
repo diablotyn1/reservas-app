@@ -16,8 +16,8 @@ json{
 Paso 2: Login con usuario administrador
 📍 POST /auth/login
 json{
-  "email": "admin@sistema.com",
-  "password": "123456"
+  "email": "juan@correo123.com",
+  "password": "1234qwe"
 }
 ✅ Resultado: Token JWT del admin
 🔑 IMPORTANTE: Copia el access_token que te devuelve
