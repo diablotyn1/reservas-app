@@ -5,7 +5,7 @@ import { ConfigModule } from '@nestjs/config';
 import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
 import { JwtStrategy } from './strategies/jwt.strategy';
-import { UsuariosModule } from '../modules/usuario/usuarios.module';
+import { UsuariosModule } from '../modules/usuarios/usuarios.module';
 import { RolesModule } from '../modules/roles/roles.module';
 
 @Module({

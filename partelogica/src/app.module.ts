@@ -3,7 +3,13 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { AuthModule } from './auth/auth.module';
 import { RolesModule } from './modules/roles/roles.module';
-import { UsuariosModule } from './modules/usuario/usuarios.module';
+import { UsuariosModule } from './modules/usuarios/usuarios.module';
+import { TiposEspacioModule } from './modules/tipos-espacio/tipos-espacio.module';
+import { EspaciosModule } from './modules/espacios/espacios.module';
+import { EquiposModule } from './modules/equipos/equipos.module';
+import { HorariosModule } from './modules/horarios/horarios.module';
+import { ReservasModule } from './modules/reservas/reservas.module';
+import { IncidenciasModule } from './modules/incidencias/incidencias.module';
 
 @Module({
   imports: [
@@ -24,6 +30,12 @@ import { UsuariosModule } from './modules/usuario/usuarios.module';
     AuthModule,
     RolesModule,
     UsuariosModule,
+    TiposEspacioModule,
+    EspaciosModule,
+    EquiposModule,
+    HorariosModule,
+    ReservasModule,
+    IncidenciasModule,
   ],
   controllers: [],
   providers: [],

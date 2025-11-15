@@ -5,14 +5,14 @@ import {
   CreateDateColumn,
   OneToMany,
 } from 'typeorm';
-import { Usuario } from '../../usuarios/entities/usuario.entity';
+import { Espacio } from '../../espacios/entities/espacio.entity';
 
-@Entity('roles')
-export class Rol {
+@Entity('tipos_espacio')
+export class TipoEspacio {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column({ unique: true, length: 50 })
+  @Column({ unique: true, length: 100 })
   nombre: string;
 
   @Column({ type: 'text', nullable: true })
@@ -21,6 +21,6 @@ export class Rol {
   @CreateDateColumn({ name: 'created_at' })
   createdAt: Date;
 
-  @OneToMany(() => Usuario, (usuario) => usuario.rol)
-  usuarios: Usuario[];
+  @OneToMany(() => Espacio, (espacio) => espacio.tipo)
+  espacios: Espacio[];
 }
